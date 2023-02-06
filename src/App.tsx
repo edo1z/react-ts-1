@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import { Button } from '@chakra-ui/react'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,9 +9,12 @@ function App() {
     <div className="App">
       <h1>Hoge</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <Button
+          colorScheme='blue'
+          onClick={() => setCount((count) => count + 1)}
+        >
           count is {count}
-        </button>
+        </Button>
       </div>
     </div>
   )
